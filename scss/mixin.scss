@@ -1,0 +1,36 @@
+// Poppins font
+@mixin poppins($weight) {
+    font-family: 'Poppins';
+    font-weight: $weight;
+}
+
+// Media size
+@mixin m-1000{
+    @media(max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin m-768{
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin m-570{
+    @media(max-width: 570px) {
+        @content;
+    }
+}
+
+@mixin m-425{
+    @media(max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin media($width) {
+    @media(max-width: $width) {
+        @content;
+    }
+}
